@@ -1,0 +1,119 @@
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Italic-VariableFont_wdth\,wght.ttf);
+    font-style: italic;
+}
+body {
+    margin:0px;
+    font-family: 'roboto';
+    background-color: #1f2937;
+}
+div#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 900px;
+    margin: auto;
+}
+div#header {
+    margin-top: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+h3#logo {
+    background-color: #1f2937;
+    font-size: 24px;
+    color: #E5E7EB;
+    margin: 0px;
+}
+p.header_link{
+    padding: 0px 5px;
+    margin: 0px;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+div#hero_main {
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+}
+div.hero_main>span{
+    height: auto;
+    width: 440px;
+}
+span>h1{
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    margin: 0px 0px 10px 0px;
+}
+span#hero_head>p{
+    margin: 5px 0px;
+    display: inline-block;
+    color: #E5E7EB;
+}
+p.secondary{
+    font-size: 18px;
+}
+span>button{
+    border-style: none;
+    background-color: #3882F6;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-bottom: 10px;
+}
+div#main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+div#cards{
+    margin: 0px auto 30px;
+    display: flex;
+    gap: 25px;
+}
+span.img_card{
+    max-width: 200px;
+}
+span.img_card>img{
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #3882F6;
+    border-image: 10px;
+}
+span.img_card>p{
+    text-align: center;
+    color: #1f2937;
+}
+h2{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+div#quote_box{
+    background-color: #E5E7EB;
+    padding: 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+span#quote{
+    width: 500px;
+    display: inline;
+    height: fit-content;
+}

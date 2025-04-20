@@ -22,7 +22,7 @@ div#hero {
 div#header {
     margin-top: 5px;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -37,6 +37,9 @@ p.header_link{
     margin: 0px;
     font-size: 18px;
     color: #E5E7EB;
+}
+span#header_links{
+    display: flex;
 }
 div#hero_main {
     margin: 50px 0px;
@@ -71,13 +74,14 @@ span>button{
     border-radius: 5px;
     font-size: 18px;
     color: #E5E7EB;
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 div#main{
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 div#cards{
@@ -102,18 +106,80 @@ h2{
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
+    min-width: 450px;
 }
 div#quote_box{
     background-color: #E5E7EB;
-    padding: 50px 0px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 100%;
+    padding: 50px 0px 30px;
+    margin: 50px 0px 50px;
 }
 span#quote{
-    width: 500px;
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: fit-content;
+    width: 800px;
+}
+p.quote_text{
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 150;
+    color: #1F2937;
+    margin-bottom: 0px;
+}
+p.quote_author{
+    align-self: flex-end;
+    padding-right: 30px;
+    margin-top: 0px;
+    font-weight: 700;
+}
+div#call_to_action{
+    background-color: #3882F6;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 800px;
+    margin: 10px 50px;
+    padding: 10px 30px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+span>h3{
+    margin: 0px;
+}
+span#action_statement{
+    color: #F9FAF8;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+span#action_statement>p{
+    margin: 5px 0px;
+}
+div#call_to_action>button{
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-style: solid;
+    border-color: #F9FAF8;
+    border-radius: 5px;
+    width: 125px;
+    height: 40px;
+    margin: auto 40px;
+    padding: 5px 20px;
+    font-weight: 400;
+    font-size: 18px;
+}
+footer>p{
+    color: #F9FAF8;
+    padding: 15px;;
+    text-align: center;
 }
